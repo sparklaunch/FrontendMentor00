@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FrontendMentor00" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9cM-E6-P08">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PPw-IQ-7UE" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xel-Kd-kl6" userLabel="Container View">
+                                                <rect key="frame" x="30" y="100" width="354" height="800"/>
+                                                <color key="backgroundColor" name="ContentColor"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" name="BackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="Xel-Kd-kl6" firstAttribute="leading" secondItem="PPw-IQ-7UE" secondAttribute="leading" constant="30" id="JKS-Xf-DyC"/>
+                                            <constraint firstAttribute="bottom" secondItem="Xel-Kd-kl6" secondAttribute="bottom" constant="100" id="Kbt-vg-yYu"/>
+                                            <constraint firstItem="Xel-Kd-kl6" firstAttribute="top" secondItem="PPw-IQ-7UE" secondAttribute="top" constant="100" id="WBD-XG-5xA"/>
+                                            <constraint firstAttribute="trailing" secondItem="Xel-Kd-kl6" secondAttribute="trailing" constant="30" id="g0x-3w-YQG"/>
+                                            <constraint firstAttribute="height" constant="1000" id="wtP-3x-7mY"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="PPw-IQ-7UE" secondAttribute="bottom" id="MSV-s9-oyF"/>
+                                    <constraint firstItem="PPw-IQ-7UE" firstAttribute="top" secondItem="9cM-E6-P08" secondAttribute="top" id="PZF-F7-HkN"/>
+                                    <constraint firstItem="PPw-IQ-7UE" firstAttribute="leading" secondItem="9cM-E6-P08" secondAttribute="leading" id="bve-pp-m0m"/>
+                                    <constraint firstAttribute="trailing" secondItem="PPw-IQ-7UE" secondAttribute="trailing" id="ecW-N5-Kks"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9cM-E6-P08" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Etp-GO-syM"/>
+                            <constraint firstItem="PPw-IQ-7UE" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="SL0-DD-3oO"/>
+                            <constraint firstItem="9cM-E6-P08" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="eCX-l0-eHL"/>
+                            <constraint firstAttribute="bottom" secondItem="9cM-E6-P08" secondAttribute="bottom" id="gDY-Jn-4ZB"/>
+                            <constraint firstItem="9cM-E6-P08" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yuz-KT-Ocx"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="414" height="1000"/>
+                    <connections>
+                        <outlet property="container" destination="Xel-Kd-kl6" id="JcF-D7-QQl"/>
+                        <outlet property="scrollView" destination="9cM-E6-P08" id="wbL-cm-6U3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="88.392857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="BackgroundColor">
+            <color red="0.040251072499999999" green="0.047312714159999998" blue="0.1028999463" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="ContentColor">
+            <color red="0.1057107821" green="0.09896130115" blue="0.2094588876" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
