@@ -32,12 +32,63 @@
                                                             <constraint firstAttribute="height" constant="300" id="ND6-mt-hhW"/>
                                                         </constraints>
                                                     </imageView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="firstBaseline" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="8hn-kz-zbf">
+                                                        <rect key="frame" x="73.333333333333329" y="330" width="207.33333333333337" height="32.333333333333314"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2n-Gy-lFW">
+                                                                <rect key="frame" x="0.0" y="0.0" width="45.333333333333336" height="32.333333333333336"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="insights" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jNf-Jf-coW">
+                                                                <rect key="frame" x="50.333333333333321" y="0.0" width="100.66666666666669" height="32.333333333333336"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                                                <color key="textColor" name="EmphasizedTextColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="that" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2LF-pD-WjL">
+                                                                <rect key="frame" x="156" y="0.0" width="51.333333333333343" height="32.333333333333336"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="help your business grow." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUs-gd-VDr">
+                                                        <rect key="frame" x="20" y="362.33333333333331" width="314" height="32.333333333333314"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdz-9v-mjA">
+                                                        <rect key="frame" x="30" y="424.66666666666663" width="294" height="76.666666666666686"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment>
+                                                                <string key="content">Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency</string>
+                                                                <attributes>
+                                                                    <color key="NSColor" name="SubheaderTextColor"/>
+                                                                    <font key="NSFont" metaFont="system" size="16"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <color key="highlightedColor" name="SubheaderTextColor"/>
+                                                    </label>
                                                 </subviews>
                                                 <color key="backgroundColor" name="ContentColor"/>
                                                 <constraints>
+                                                    <constraint firstItem="pdz-9v-mjA" firstAttribute="top" secondItem="eUs-gd-VDr" secondAttribute="bottom" constant="30" id="2oY-OJ-doS"/>
                                                     <constraint firstItem="e9e-h7-eHk" firstAttribute="top" secondItem="Xel-Kd-kl6" secondAttribute="top" id="5Fe-C9-Dvb"/>
+                                                    <constraint firstItem="8hn-kz-zbf" firstAttribute="centerX" secondItem="Xel-Kd-kl6" secondAttribute="centerX" id="K5X-J7-Mcz"/>
+                                                    <constraint firstItem="pdz-9v-mjA" firstAttribute="leading" secondItem="Xel-Kd-kl6" secondAttribute="leading" constant="30" id="Q7n-HH-YLM"/>
+                                                    <constraint firstAttribute="trailing" secondItem="pdz-9v-mjA" secondAttribute="trailing" constant="30" id="ZNQ-Z0-uEh"/>
+                                                    <constraint firstAttribute="trailing" secondItem="eUs-gd-VDr" secondAttribute="trailing" constant="20" id="cZt-NU-FyW"/>
                                                     <constraint firstItem="e9e-h7-eHk" firstAttribute="leading" secondItem="Xel-Kd-kl6" secondAttribute="leading" id="juK-TN-fq8"/>
                                                     <constraint firstAttribute="trailing" secondItem="e9e-h7-eHk" secondAttribute="trailing" id="lEb-Dn-4tj"/>
+                                                    <constraint firstItem="eUs-gd-VDr" firstAttribute="top" secondItem="8hn-kz-zbf" secondAttribute="bottom" id="mTq-BY-o7b"/>
+                                                    <constraint firstItem="8hn-kz-zbf" firstAttribute="top" secondItem="e9e-h7-eHk" secondAttribute="bottom" constant="30" id="p4s-dG-48j"/>
+                                                    <constraint firstItem="eUs-gd-VDr" firstAttribute="leading" secondItem="Xel-Kd-kl6" secondAttribute="leading" constant="20" id="syx-ZL-KRm"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -74,6 +125,7 @@
                         <outlet property="container" destination="Xel-Kd-kl6" id="JcF-D7-QQl"/>
                         <outlet property="headerImage" destination="e9e-h7-eHk" id="TTw-8b-Tyc"/>
                         <outlet property="scrollView" destination="9cM-E6-P08" id="wbL-cm-6U3"/>
+                        <outlet property="subheaderLabel" destination="pdz-9v-mjA" id="yU4-s9-svl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -88,6 +140,12 @@
         </namedColor>
         <namedColor name="ContentColor">
             <color red="0.1057107821" green="0.09896130115" blue="0.2094588876" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="EmphasizedTextColor">
+            <color red="0.62601256370000002" green="0.38718172909999998" blue="0.82630378010000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="SubheaderTextColor">
+            <color red="0.75778138640000003" green="0.75081282849999997" blue="0.83424550289999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
