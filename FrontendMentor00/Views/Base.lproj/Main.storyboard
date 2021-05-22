@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -25,7 +25,20 @@
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xel-Kd-kl6" userLabel="Container View">
                                                 <rect key="frame" x="30" y="100" width="354" height="800"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FilteredHeaderImage" translatesAutoresizingMaskIntoConstraints="NO" id="e9e-h7-eHk">
+                                                        <rect key="frame" x="0.0" y="0.0" width="354" height="300"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="300" id="ND6-mt-hhW"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
                                                 <color key="backgroundColor" name="ContentColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="e9e-h7-eHk" firstAttribute="top" secondItem="Xel-Kd-kl6" secondAttribute="top" id="5Fe-C9-Dvb"/>
+                                                    <constraint firstItem="e9e-h7-eHk" firstAttribute="leading" secondItem="Xel-Kd-kl6" secondAttribute="leading" id="juK-TN-fq8"/>
+                                                    <constraint firstAttribute="trailing" secondItem="e9e-h7-eHk" secondAttribute="trailing" id="lEb-Dn-4tj"/>
+                                                </constraints>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" name="BackgroundColor"/>
@@ -59,6 +72,7 @@
                     <size key="freeformSize" width="414" height="1000"/>
                     <connections>
                         <outlet property="container" destination="Xel-Kd-kl6" id="JcF-D7-QQl"/>
+                        <outlet property="headerImage" destination="e9e-h7-eHk" id="TTw-8b-Tyc"/>
                         <outlet property="scrollView" destination="9cM-E6-P08" id="wbL-cm-6U3"/>
                     </connections>
                 </viewController>
@@ -68,6 +82,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="FilteredHeaderImage" width="654" height="480"/>
         <namedColor name="BackgroundColor">
             <color red="0.040251072499999999" green="0.047312714159999998" blue="0.1028999463" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>

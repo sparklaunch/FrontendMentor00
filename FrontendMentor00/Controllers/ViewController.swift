@@ -8,6 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet var headerImage: UIImageView!
     @IBOutlet var scrollView: UIScrollView!
     @IBOutlet var container: UIView!
     override func viewDidLoad() {
@@ -32,5 +33,6 @@ extension ViewController {
         self.container.layer.shadowOffset = CGSize(width: 10.0, height: 10.0)
         self.container.layer.shadowRadius = 10.0
         self.container.layer.shadowOpacity = 0.5
+        self.container.clipsToBounds = true
     }
 }

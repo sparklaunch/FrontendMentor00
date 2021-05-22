@@ -9,4 +9,7 @@ struct K {
     struct Colors {
         static let shadowColorName: String = "ContentColor"
     }
+    struct Images {
+        static let headerImageName: String = "HeaderImage"
+    }
 }
