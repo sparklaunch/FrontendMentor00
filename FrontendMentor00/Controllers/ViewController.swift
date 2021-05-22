@@ -12,6 +12,9 @@ class ViewController: UIViewController {
     @IBOutlet var scrollView: UIScrollView!
     @IBOutlet var container: UIView!
     @IBOutlet var subheaderLabel: UILabel!
+    @IBOutlet var firstItemLabel: UILabel!
+    @IBOutlet var secondItemLabel: UILabel!
+    @IBOutlet var thirdItemLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.initialize()
@@ -25,6 +28,7 @@ extension ViewController {
         self.initializeScrollView()
         self.initializeContainer()
         self.initializeSubheaderLabel()
+        self.initializeItemLabel()
     }
     func initializeScrollView() {
         self.scrollView.contentInsetAdjustmentBehavior = .never
@@ -44,5 +48,17 @@ extension ViewController {
         paragraphStyle.alignment = .center
         attributedString.addAttribute(NSAttributedString.Key.paragraphStyle, value: paragraphStyle, range: NSMakeRange(0, attributedString.length))
         self.subheaderLabel.attributedText = attributedString
+    }
+    func initializeItemLabel() {
+        let strings: [String] = [self.firstItemLabel.text!, self.secondItemLabel.text!, self.thirdItemLabel.text!]
+        let attributedStrings: [NSMutableAttributedString] = strings.map{self.adjustLetterSpacing(for: $0, with: 3.0)}
+        self.firstItemLabel.attributedText = attributedStrings[0]
+        self.secondItemLabel.attributedText = attributedStrings[1]
+        self.thirdItemLabel.attributedText = attributedStrings[2]
+    }
+    func adjustLetterSpacing(for string: String, with letterSpacing: Double) -> NSMutableAttributedString {
+        let attributedString: NSMutableAttributedString = NSMutableAttributedString(string: string)
+        attributedString.addAttribute(NSAttributedString.Key.kern, value: letterSpacing, range: NSMakeRange(0, attributedString.length))
+        return attributedString
     }
 }
